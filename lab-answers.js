@@ -189,4 +189,9 @@ for (let j = 0; j < 3; j++) {
 for (let i = 0; i < kristynsCloset.length; i++) {
     console.log("WHIRR: Now washing " + kristynsCloset[i]);
  }
+
+ // Inventory
+ console.log(thomsCloset[0][0], ' ', thomsCloset[0][1], ' ', thomsCloset[0][2], ' ', thomsCloset[0][3]);
+ console.log(thomsCloset[1][0], ' ', thomsCloset[1][1], ' ', thomsCloset[1][2]);
+ console.log(thomsCloset[2][0], ' ', thomsCloset[2][1], ' ', thomsCloset[2][2]);
 ////////////////////////////////
