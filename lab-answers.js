@@ -63,33 +63,60 @@
 // }
 // ////////////////////////////////
 
-//Methods, Revisited
-const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
-//
-const indexOfTitanic = favMovies.indexOf('Titanic');
-console.log("index of Titanic " + indexOfTitanic); 
-//1,2
-const sortFavMovies = favMovies.sort();
-console.log("sorted movies " + sortFavMovies);
-//3
-favMovies.pop();
-//4
-favMovies.push("Guardians of the Galaxy");
-//5
-const reverseFavMovies = favMovies.reverse();
-console.log("reversed movies " + reverseFavMovies);
-//6
-favMovies.shift();
-//7
-favMovies.unshift();
-//8,9
-const spliceFavMovies = favMovies.splice(favMovies.indexOf('"Django Unchained"'), 1, "Avatar" );
-console.log("use of splice " + favMovies);
-//10,11,12,13,14
-const theMiddle = Math.floor(favMovies.length / 2);
-let sliceLastHalf = favMovies.slice(theMiddle,favMovies.length-1);
-console.log("use of slice " + sliceLastHalf);
-//
-const indexOfFastandFurious = favMovies.indexOf("Fast and Furious.");
-console.log("index of Fast and Furious " + indexOfFastandFurious);
+// //Methods, Revisited
+// const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
+// //
+// const indexOfTitanic = favMovies.indexOf('Titanic');
+// console.log("index of Titanic " + indexOfTitanic); 
+// //1,2
+// const sortFavMovies = favMovies.sort();
+// console.log("sorted movies " + sortFavMovies);
+// //3
+// favMovies.pop();
+// //4
+// favMovies.push("Guardians of the Galaxy");
+// //5
+// const reverseFavMovies = favMovies.reverse();
+// console.log("reversed movies " + reverseFavMovies);
+// //6
+// favMovies.shift();
+// //7
+// favMovies.unshift();
+// //8,9
+// const spliceFavMovies = favMovies.splice(favMovies.indexOf('"Django Unchained"'), 1, "Avatar" );
+// console.log("use of splice " + favMovies);
+// //10,11,12,13,14
+// const theMiddle = Math.floor(favMovies.length / 2);
+// let sliceLastHalf = favMovies.slice(theMiddle,favMovies.length-1);
+// console.log("use of slice " + sliceLastHalf);
+// //
+// const indexOfFastandFurious = favMovies.indexOf("Fast and Furious.");
+// console.log("index of Fast and Furious " + indexOfFastandFurious);
+// ////////////////////////////////
+
+// Where is Waldo
+const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
+["Lucinda", "Jacc", "Neff", "Snoop"],
+["Petunia", ["Baked Goods", "Waldo"]]];
+const spliceEggbert = whereIsWaldo.splice(whereIsWaldo.indexOf('"Eggbert"'),1);
+console.log("use of splice " + spliceEggbert);
+for (let i = 0; i < whereIsWaldo.length; i++) {
+    let subarray = whereIsWaldo[i];
+    for (let j = 0; j < subarray.length; j++) {
+        if (subarray[j] === "Neff") {
+            subarray[j] = "No One";
+        }
+    }
+}
+console.log(whereIsWaldo);
+for (let i = 0; i < whereIsWaldo.length; i++) {
+    let subarray = whereIsWaldo[i];
+    for (let j = 0; j < subarray.length; j++) {
+        let subsubarray = subarray[j];
+        for (let n = 0; n < subsubarray.length; n++)
+            if (subsubarray[n] === "Waldo") {
+                console.log(subsubarray[n]);
+            }
+    }
+}
 ////////////////////////////////
