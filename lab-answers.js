@@ -121,13 +121,20 @@
 // }
 // ////////////////////////////////
 
-// Excited Kitten
-const mewo = ["...human... why you taking pictures of me...?", "...the catnip made me do it...", "...why does the red dot always get away...?"];
-for (let i = 1; i <= 20; i++) {
-    if (i % 2 === 0) {
-        console.log(mewo[(Math.floor(Math.random() * mewo.length))]);
-    } else {
-        console.log("Love me, pet me! HSSSSSS!");
-    }
-}
+// // Excited Kitten
+// const mewo = ["...human... why you taking pictures of me...?", "...the catnip made me do it...", "...why does the red dot always get away...?"];
+// for (let i = 1; i <= 20; i++) {
+//     if (i % 2 === 0) {
+//         console.log(mewo[(Math.floor(Math.random() * mewo.length))]);
+//     } else {
+//         console.log("Love me, pet me! HSSSSSS!");
+//     }
+// }
+// ////////////////////////////////
+
+// Find the Median
+const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
+nums.sort();
+const median = Math.floor(nums.length / 2);;
+console.log(nums[median]);
 ////////////////////////////////
