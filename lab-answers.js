@@ -94,29 +94,40 @@
 // console.log("index of Fast and Furious " + indexOfFastandFurious);
 // ////////////////////////////////
 
-// Where is Waldo
-const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
-["Lucinda", "Jacc", "Neff", "Snoop"],
-["Petunia", ["Baked Goods", "Waldo"]]];
-const spliceEggbert = whereIsWaldo.splice(whereIsWaldo.indexOf('"Eggbert"'),1);
-console.log("use of splice " + spliceEggbert);
-for (let i = 0; i < whereIsWaldo.length; i++) {
-    let subarray = whereIsWaldo[i];
-    for (let j = 0; j < subarray.length; j++) {
-        if (subarray[j] === "Neff") {
-            subarray[j] = "No One";
-        }
-    }
-}
-console.log(whereIsWaldo);
-for (let i = 0; i < whereIsWaldo.length; i++) {
-    let subarray = whereIsWaldo[i];
-    for (let j = 0; j < subarray.length; j++) {
-        let subsubarray = subarray[j];
-        for (let n = 0; n < subsubarray.length; n++)
-            if (subsubarray[n] === "Waldo") {
-                console.log(subsubarray[n]);
-            }
+// // Where is Waldo
+// const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
+// ["Lucinda", "Jacc", "Neff", "Snoop"],
+// ["Petunia", ["Baked Goods", "Waldo"]]];
+// const spliceEggbert = whereIsWaldo.splice(whereIsWaldo.indexOf('"Eggbert"'),1);
+// console.log("use of splice " + spliceEggbert);
+// for (let i = 0; i < whereIsWaldo.length; i++) {
+//     let subarray = whereIsWaldo[i];
+//     for (let j = 0; j < subarray.length; j++) {
+//         if (subarray[j] === "Neff") {
+//             subarray[j] = "No One";
+//         }
+//     }
+// }
+// console.log(whereIsWaldo);
+// for (let i = 0; i < whereIsWaldo.length; i++) {
+//     let subarray = whereIsWaldo[i];
+//     for (let j = 0; j < subarray.length; j++) {
+//         let subsubarray = subarray[j];
+//         for (let n = 0; n < subsubarray.length; n++)
+//             if (subsubarray[n] === "Waldo") {
+//                 console.log(subsubarray[n]);
+//             }
+//     }
+// }
+// ////////////////////////////////
+
+// Excited Kitten
+const mewo = ["...human... why you taking pictures of me...?", "...the catnip made me do it...", "...why does the red dot always get away...?"];
+for (let i = 1; i <= 20; i++) {
+    if (i % 2 === 0) {
+        console.log(mewo[(Math.floor(Math.random() * mewo.length))]);
+    } else {
+        console.log("Love me, pet me! HSSSSSS!");
     }
 }
 ////////////////////////////////
