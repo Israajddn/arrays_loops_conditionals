@@ -184,4 +184,9 @@ for (let j = 0; j < 3; j++) {
         console.log(thomsCloset[i][Math.floor(Math.random() * thomsCloset[i].length + 0)]);
      }
 }
+
+// Dirty Laundry
+for (let i = 0; i < kristynsCloset.length; i++) {
+    console.log("WHIRR: Now washing " + kristynsCloset[i]);
+ }
 ////////////////////////////////
