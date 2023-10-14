@@ -148,30 +148,40 @@ const kristynsCloset = [
     "green pants",
     "yellow knit hat",
     "marshmallow peeps"
-  ];
-  
-  // Thom's closet is more complicated. Check out this nested data structure!!
-  const thomsCloset = [
+];
+
+// Thom's closet is more complicated. Check out this nested data structure!!
+const thomsCloset = [
     [
-      // These are Thom's shirts
-      "grey button-up",
-      "dark grey button-up",
-      "light blue button-up",
-      "blue button-up",
-    ],[
-      // These are Thom's pants
-      "grey jeans",
-      "jeans",
-      "PJs"
-    ],[
-      // Thom's accessories
-      "wool mittens",
-      "wool scarf",
-      "raybans"
+        // These are Thom's shirts
+        "grey button-up",
+        "dark grey button-up",
+        "light blue button-up",
+        "blue button-up",
+    ], [
+        // These are Thom's pants
+        "grey jeans",
+        "jeans",
+        "PJs"
+    ], [
+        // Thom's accessories
+        "wool mittens",
+        "wool scarf",
+        "raybans"
     ]
-  ];
-  // Alien Attire
-  const kristynsShoe = kristynsCloset.shift();
-  thomsCloset[2].push(kristynsShoe);
-  console.log(thomsCloset[2]);
+];
+// Alien Attire
+const kristynsShoe = kristynsCloset.shift();
+thomsCloset[2].push(kristynsShoe);
+console.log(thomsCloset[2]);
+
+// Dress Us Up
+for (let i = 0; i < 3; i++) {
+    console.log(kristynsCloset[(Math.floor(Math.random() * kristynsCloset.length))]);
+}
+for (let j = 0; j < 3; j++) {
+    for (let i = 0; i < thomsCloset.length; i++) {
+        console.log(thomsCloset[i][Math.floor(Math.random() * thomsCloset[i].length + 0)]);
+     }
+}
 ////////////////////////////////
