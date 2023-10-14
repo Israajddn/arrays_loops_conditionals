@@ -2,6 +2,7 @@
 for (let i = 1; i <= 20; i++) {
     console.log(i);
 }
+////////////////////////////////
 
 // Get Even 
 for (let i = 0; i <= 200; i++) {
@@ -9,6 +10,7 @@ for (let i = 0; i <= 200; i++) {
         console.log(i);
     }
 }
+////////////////////////////////
 
 // Fizz Buzz
 const fb = [];
@@ -24,13 +26,14 @@ for (let i= 1; i <= 100; i++){
   }
 }
 console.log(fb);
+////////////////////////////////
 
 //Wild Wild Life
-const wolfy = ["Wolfy", "wolf", 16, "Yukon Territory"]
-const sharky = ["Sharky", "shark", 20, "Left Coast"]
-const plantee = ["Plantee", "plant",  5000 , "Mordor"]
-const porgee = ["Porgee", "Porg", 186, "Ahch-To"]
-const dart = ["D'Art" , "Demogorgan Dog", 2, "Upside Down"]
+const wolfy = ["Wolfy", "wolf", 16, "Yukon Territory"];
+const sharky = ["Sharky", "shark", 20, "Left Coast"];
+const plantee = ["Plantee", "plant",  5000 , "Mordor"];
+const porgee = ["Porgee", "Porg", 186, "Ahch-To"];
+const dart = ["D'Art" , "Demogorgan Dog", 2, "Upside Down"];
 //1
 for (let i= 0; i < plantee.length; i++) {
 	if (typeof plantee[i] === "number") {
@@ -51,3 +54,11 @@ wolfy.unshift("Gameboy");
 console.log(plantee);
 console.log(wolfy);
 console.log(dart);
+////////////////////////////////
+
+//Yell at the Ninja Turtles
+const ninjas = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+for (let ninja of ninjas) {
+    console.log(ninja.toUpperCase());
+}
+////////////////////////////////
